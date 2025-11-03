@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        nav{
+            border: 1px solid black;
+        }
+        .nav-link{
+            list-style-type: none;
+            padding-left: 0;
+            display: inline-block;
+        }
+        .nav-link a::after {
+            content: ">";
+            display: inline-block;
+            color: black;
+            font-size: 80%;
+            font-weight: bold;
+            padding: 0 3px;
+        }
+    </style>
+</head>
+<body>
+    <nav>
+        <ol>
+            <li class="nav-link"><a href="">Home</a></li>
+            <li class="nav-link"><a href="">About</a></li>
+            <li class="nav-link">Dashboard</li>
+        </ol>
+    </nav>
+</body>
+</html>
